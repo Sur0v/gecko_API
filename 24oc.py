@@ -22,3 +22,18 @@ coins_list = cg.get_coins_list()
 #print(coins_list[0:4])
 market = cg.get_coins_markets(vs_currency = "usd", order = "market_cap_desc")[0:5]
 print(market)
+
+hist = cg.get_coin_market_chart_range_by_id(id = "bitcoin",
+                                            vs_currency = "usd",
+                                            from_timestamp = "0",
+                                            to_timestamp = "1")
+print(hist)
+"""
+hist2 = cg.(id = "bitcoin",
+                                            vs_currency = "usd",
+                                            from_timestamp = "1609459200",
+                                            to_timestamp = "1612137600")
+print(hist2)
+data = cg.get_coin_history_by_id(id='bitcoin',date='10-11-2020', localization='false')
+
+cg.get_coin_market_chart_by_id(id='bitcoin',vs_currency='usd',days='3')
