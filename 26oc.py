@@ -29,4 +29,25 @@ for coin_id in top_100_ids1:
             print(f"Skipping {coin_id} on {date}. 'market_data' not found in response.")
 
 # Print or use crypto_data_dict as needed
-print(crypto_data_dict)
+#print(crypto_data_dict)
+
+print(crypto_data_dict["bitcoin"]['22-01-2024']) #çıktısı --> {'market_cap': 814709364023.4832, 'price': 41541.89945706261}
+"""
+db = {
+    "id" : {
+        "date" : {
+            "market_cap" : 295225509771.24744,
+            "price" : 2454.909543339834,
+            "daily_tot_vol" : 5641654654,
+            "h_l_c" : {
+                "high" : 56464,
+                "low" : 46464,
+                "center": (db["id"]["date"]["h_l_c"]["high"] + db["id"]["date"]["h_l_c"]["low"]) / 2 
+            },
+            "total_supp" : 46545645645645564,
+            "circ_supp" : 65654564564,
+        }
+    }
+}
+"""
+
