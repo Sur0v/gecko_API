@@ -39,15 +39,23 @@ db = {
             "market_cap" : 295225509771.24744,
             "price" : 2454.909543339834,
             "daily_tot_vol" : 5641654654,
-            "h_l_c" : {
-                "high" : 56464,
-                "low" : 46464,
-                "center": (db["id"]["date"]["h_l_c"]["high"] + db["id"]["date"]["h_l_c"]["low"]) / 2 
-            },
+            "high" : 56464,
+            "low" : 46464,
+            "center": (db["id"]["date"]["high"] + db["id"]["date"]["low"]) / 2,
             "total_supp" : 46545645645645564,
             "circ_supp" : 65654564564,
+            "max_supp" : 424654654564654564564564
         }
     }
 }
+crypto_data_dict[coin_id][date]['daily_tot_vol'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['total_supp'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['circ_supp'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['max_supp'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['high'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['low'] = 'mynewvalue'
+crypto_data_dict[coin_id][date]['center'] = 'mynewvalue'
+
 """
+
 
